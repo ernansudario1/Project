@@ -1,0 +1,124 @@
+
+@media only screen and (max-width: 992px) {
+	nav {
+		ul{
+			li{
+				border-bottom: 1px solid #f1f1f1;
+				.dropdown-menu{
+					.dropdown-item{
+						border-bottom: 1px solid #f1f1f1;
+					}
+				}
+				a{
+					i{
+						float: right;
+						color: gray;
+					}
+				}
+			}
+		}
+		.form-inline{
+			input{
+				margin-left: 15px;
+			}
+		}
+	}
+}
+*{
+	font-family: Century Gothic;
+}
+nav {
+	border-bottom: 1px solid #f1f1f1;
+	.navbar-brand{
+		text-transform: uppercase;
+		font-family: Century Gothic;
+		color: seagreen !important;
+		font-weight: bold;
+	}
+	ul{
+		li{
+			a{
+				i{
+					color: seagreen;
+				}
+			}
+			margin-left: 15px;
+			.dropdown-menu{
+				border: none;
+				.dropdown-item{
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+			}
+			.dropdown-toggle::after {
+			    display: none;
+			}
+		}
+	}
+	.form-inline{
+	    .searchbar{
+	    height: 40px;
+	    background-color: #f1f1f1;
+	    border-radius: 30px;
+	    	.search_input{
+				color: darkgreen;
+				border: 0;
+				outline: 0;
+			    background: none;
+			    width: 0;
+			    caret-color:transparent;
+			    line-height: 40px;
+			    transition: width 0.4s linear;
+			    }
+
+	    	.search_icon{
+		 	  	height: 40px;
+			    width: 40px;
+			    float: right;
+			    display: flex;
+			    justify-content: center;
+	  			align-items: center;
+	 	 		border-radius: 50%;
+	 			color: darkgreen;
+	 	  		text-decoration: none;
+	    	}
+	    }
+	    .searchbar:hover > .search_input{
+
+	    	padding: 0 10px;
+	    	width: 230px;
+			caret-color: darkgreen;
+	   		transition: width 0.4s linear;
+	    	}
+
+	    .searchbar:hover > .search_icon{
+	   	 	background: white;
+	   		color: darkgreen;
+	    }
+	}
+	.rightnav{
+		.link{
+			margin-left: 5px;
+			float: right;
+			.signup{
+				padding: 2px 10px 2px 10px;
+				border: 1px solid darkgreen;
+			}
+			a{
+				color: darkgreen;
+			text-decoration: none;
+			}
+		}
+	}
+}
+#myUL{
+	position: fixed;
+	z-index: 2;
+	right: 20%;
+	
+	li{
+		list-style: none;
+		width: 200px;
+		display: none;
+	}
+}

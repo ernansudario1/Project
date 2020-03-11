@@ -1,0 +1,37 @@
+.gridcards{
+	.card{
+		border: none;
+		.clr-overlay{
+			background-color: rgba(0,0,0, 0.5);
+		}
+		.card-img-overlay{
+			.genre{
+				position: absolute; 
+				top: 45%;
+				bottom: 45%; 
+				left: 25%; 
+				right: 25%;
+				font-family: candara;
+			}
+			.card-title{
+				color: white;
+				width: 28px;
+				padding: 3px;
+				border-radius: 50%;
+			}
+		}
+		.card-body{
+			.card-title{
+				.cardnum{
+					border-right: 1px solid gray;
+				}
+			}
+			.card-text{
+				a{
+					color: darkgreen;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
