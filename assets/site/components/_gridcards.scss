@@ -5,6 +5,9 @@
 			background-color: rgba(0,0,0, 0.5);
 		}
 		.card-img-overlay{
+			font-weight: bold;
+			color: white;
+			text-shadow: 2px 2px 2px #000000;
 			.genre{
 				position: absolute; 
 				top: 45%;
@@ -13,25 +16,14 @@
 				right: 25%;
 				font-family: candara;
 			}
-			.card-title{
-				color: white;
-				width: 28px;
-				padding: 3px;
-				border-radius: 50%;
-			}
 		}
-		.card-body{
-			.card-title{
-				.cardnum{
-					border-right: 1px solid gray;
-				}
-			}
-			.card-text{
-				a{
-					color: darkgreen;
-					text-decoration: none;
-				}
-			}
+		.card-text{
+			margin-top: -8px;
+			font-size: 0.8em;
+			color: gray;
+		}
+		.card-img-top{
+			border-radius: 5px;
 		}
 	}
 }

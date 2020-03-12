@@ -14,7 +14,7 @@
 	<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
- 	<a class="navbar-brand" href="#">
+ 	<a class="navbar-brand" href="tambayan.html">
 		Santinakpan
 	</a>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -28,10 +28,11 @@
 		        	<i class="fa fa-chevron-down"></i>
 		        </a>
 		        <div class="dropdown-menu p-0 bg-light" aria-labelledby="navbarDropdownMenuLink">
-		          	<a class="dropdown-item" href="#">Kwento</a>
-		          	<a class="dropdown-item" href="tula.html">Tula</a>
-		          	<a class="dropdown-item" href="#">Guhit</a>
-		        	<a class="dropdown-item" href="#">Video</a>
+		          	<a class="dropdown-item" href="kwento/kwento.html">Kwento</a>
+		          	<a class="dropdown-item" href="tula/tula.html">Tula</a>
+		          	<a class="dropdown-item" href="guhit/guhit.html">Guhit</a>
+		        	<a class="dropdown-item" href="talasarili/Talasarili.hmtl">Talasarili</a>
+		        	<a class="dropdown-item" href="larawan/larawan.html">Larawan</a>
 		        </div>
 		    </li>
 	    	<li class="nav-item dropdown">
@@ -40,9 +41,12 @@
 		        	<i class="fa fa-chevron-down"></i>
 		        </a>
 		        <div class="dropdown-menu p-0 bg-light" aria-labelledby="navbarDropdownMenuLink">
-		          	<a class="dropdown-item" href="#">Sufokante</a>
-		          	<a class="dropdown-item" href="#">Nutreyale</a>
-		          	<a class="dropdown-item" href="#">Gladace</a>
+		          	<a class="dropdown-item" href="sufokante.html">Sufokante</a>
+		          	<a class="dropdown-item" href="kimmycabs.html">KimmyCabs</a>
+		          	<a class="dropdown-item" href="Zaiden.html">Zaiden</a>
+		          	<a class="dropdown-item" href="Fairyqueen.html">Fairyqueen</a>
+		          	<a class="dropdown-item" href="Fairyqueen.html">Catchareal</a>
+		          	<a class="dropdown-item" href="Fairyqueen.html">Kurinto</a>
 		        </div>
 		    </li>
 	    </ul>
@@ -60,38 +64,54 @@
 		</div>
 	</div>
 </nav>
-<div class="container-fluid m-0 p-0 bg-light">
+<div class="container-fluid m-0 p-0 bg-white">
 	<div class="coverphoto" style="background-image: url(../assets/img/jpeg/coverphoto.jpg);">
 		<div class="black">
-		<img src="../assets/img/jpeg/sufo.jpg" class="profilepic">
-		<h5 class="text-center">Sufokante</h5>
-		<p class="text-center">@Sufokante</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 m-5">
+						<img src="../assets/img/jpeg/sufo.jpg" class="profilepic m-2">
+					</div>
+					<div class="col-sm-7 text-white mt-2">
+						<div class="mt-5 pl-5">
+							<h1 class="font-weight-bold">Sufokante</h1>
+							<p class="text-light">
+								<span class="font-weight-bold">10</span> Napangilakan 
+								<span class="font-weight-bold pl-3">1</span> Talasarili 
+								<span class="font-weight-bold pl-3"> 1</span> Tagahanga
+							</p>
+							<h6 class="font-weight-bold">
+								"Kasiyahan at kalungkutan ay isa lamang pangkaisipan at hindi nararapat na bigyan ng kahulugan" -Sufokante</h6>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="profilenav bg-light">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-4">
+					<a href="#" class="stp-borderb">About Me</a> 
+				</div>
+				<div class="col-md-1"></div>
 				<div class="col-md-1">
-					<a href="" class="sining">Sining</a>
+					<button class="tablinks border-0 bg-light" id="defaultOpen" onclick="openTab(event, 'Sining')">Sining</button>
 				</div>
 				<div class="col-md-1">
-					<a href="">Talasarili</a>
+					<button class="tablinks border-0 bg-light" onclick="openTab(event, 'Talasarili')">Talasarili</button>
 				</div>
 				<div class="col-md-1">
-					<a href="">Napangilakan</a>
+					 <button class="tablinks border-0 bg-light" onclick="openTab(event, 'Napangilikan')">Napangilakan</button>
 				</div>
-				<div class="col-md-7">
-
-				</div>
-				<div class="col-md-2">
-					<a href="">Settings</a>
+				<div class="col-md-4">
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row mt-5">
-			<div class="aboutme col-lg-4 pt-2 border mb-5 bg-light">
+			<div class="aboutme col-lg-4 pt-2 border mb-5">
 				Ako yung tipong tao na madalas mong nakikitang nakapolo t-shirt  at palaging may baon na panyo. Yung tipong tao na walang pake sa buhok kung ito'y magulo. Yung tipong tao na kapag tinanong, palaging tugon ay iling at tango. At yung tipong tao na palaging nakaupo sa harapan dahil ang paningin ay malabo.<br><br>
 
 				Ngunit hindi ako yung tipong tao na naka eyeglass at antisosyal ang pagkatao. Hindi ako yung tipong nagaaral nang mabuti at palaging nakikilahok sa klase.<br><br>
@@ -104,12 +124,22 @@
 				<i class="fa fa-facebook"></i> Facebook account
 				<hr>
 			</div>
-			<div class="gawa col-lg-7 ml-5 pt-2 border mb-5 bg-light">
+			<div id="Talasarili" class="tabcontent col-lg-7 ml-5 pt-2 border mb-5">
+			  <h3>Paris</h3>
+			  <p>Paris is the capital of France.</p> 
+			</div>
+			<div id="Napangilikan" class="tabcontent col-lg-7 ml-5 pt-2 border mb-5t">
+			  <h3>Tokyo</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			</div>
+			<div class="tabcontent col-lg-7 ml-5 pt-2 border mb-5" id="Sining">
 				<h5 class="font-weight-bold">Napangilakan ni Sufokante</h5>
-				<p class="text-muted">1 Kwento  1 Tula  1 Larawan</p>
+				<p class="text-muted"><span class="font-weight-bold">1</span> Kwento  
+					<span class="font-weight-bold pl-3">15</span> Tula 
+					<span class="font-weight-bold pl-3">3</span> Larawan</p>
 				<div class="row mb-3">
 					<div class="col-sm-4">
-						<img src="../assets/img/jpeg/astraltravel.jpg">
+						<img src="../assets/img/png/santinakpan.png">
 					</div>
 					<div class="card-body col-sm-8 p-0">
 				        <h5 class="card-title font-weight-bold m-0">Santinakpan</h5>
@@ -117,7 +147,7 @@
 				        <p class="card-text mr-3">
 						Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral...
 						</p>
-				         <div class="card-footer text-muted bg-light pl-0 mr-3">
+				         <div class="card-footer text-muted bg-white pl-0 mr-3">
 						   <p> Published Oct 25, 2019</p>
 						  </div>
 			      	</div>
@@ -127,12 +157,12 @@
 						<img src="../assets/img/jpeg/astraltravel.jpg">
 					</div>
 					<div class="card-body col-sm-8 p-0">
-				        <h5 class="card-title font-weight-bold m-0">Santinakpan</h5>
+				        <h5 class="card-title font-weight-bold m-0">Astral Travel</h5>
 				        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
 				        <p class="card-text mr-3">
 						Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral...
 						</p>
-				         <div class="card-footer text-muted bg-light pl-0 mr-3">
+				         <div class="card-footer text-muted bg-white pl-0 mr-3">
 						   <p> Published Oct 25, 2019</p>
 						  </div>
 			      	</div>
@@ -147,7 +177,7 @@
 				        <p class="card-text mr-3">
 						Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral...
 						</p>
-				         <div class="card-footer text-muted bg-light pl-0 mr-3">
+				         <div class="card-footer text-muted bg-white pl-0 mr-3">
 						   <p> Published Oct 25, 2019</p>
 						  </div>
 			      	</div>
@@ -159,45 +189,6 @@
 		</div>
 	</div>
 </div>
-<div class="footer container-fluid">
-		<div class="container pt-5">
-			<div class="row">
-				<div class="col-lg-4">
-					<h1>Santinakpan</h1>
-					<p>Dive into a virtual world while keeping in touch with reality</p>
-					<p><i class="fa fa-envelope"></i> santinakpan.gmail.com</p>
-					<p><i class="fa fa-phone"></i> 091234567890 </p>
-					<p><i class="fa fa-compass"></i> Informatics College Cebu</p>
-				</div>
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-lg-4">
-							<h6>Links</h6>
-							<p><a href="">Contact Us</a></p>
-							<p><a href="">About</a></p>
-							<p><a href="">Privacy</a></p>
-							<p><a href="">Policy and Terms</a></p>
-							<p><a href="">Help Center & FAQ</a></p>
-							<p><a href="">Developers</a></p>
-						</div>
-						<div class="col-lg-4">
-							<h6>Social Sites</h6>
-							<p><a href=""><i class="fa fa-facebook"></i> Facebook</a></p>
-							<p><a href=""><i class="fa fa-youtube"></i> Youtube</a></p>
-							<p><a href=""><i class="fa fa-instagram"></i> Instagram</a></p>
-							<p><a href=""><i class="fa fa-twitter"></i> Twitter</a></p>
-							<p><a href=""><i class="fa fa-tumblr"></i> Tumblr</a></p>
-							<p><a href=""><i class="fa fa-pinterest"></i> Pinterest</a></p>
-						</div>
-						<div class="col-lg-4 pl-5">
-							<h6>Related Sites</h6>
-							<p><a href="">pinterest.com/Sufokante</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</div>
 <div class="subfooter container-fluid">
 	<h6 class="text-uppercase">Copyright &copy; 2019 Santinakpan
 		<a href="facebook.com/santinakpan"><i class="fa fa-facebook"></i></a>
@@ -205,6 +196,30 @@
 		<a href="instagram.com/santinakpan"><i class="fa fa-instagram"></i></a>
 	</h6>
 </div>
+<script type="text/javascript">
+	document.getElementById("defaultOpen").click();
+	function openTab(evt, tabName) {
+
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 <script src="../jquery/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 </body>
