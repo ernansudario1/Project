@@ -28,7 +28,7 @@
 	.stp-borderb{
 		padding-bottom: 10px;
 		border-bottom: 2px solid seagreen;
-	}
+	}s
 }
 .aboutme{
     -webkit-box-shadow: 0 1px 10px 0 rgba(34,34,34,.08), 0 4px 5px 0 rgba(34,34,34,.1);
@@ -36,19 +36,13 @@
    	border-radius: 5px;
    	font-size: 0.9em;
 }
-.tabcontent{
+.gawa{
 	-webkit-box-shadow: 0 1px 10px 0 rgba(34,34,34,.08), 0 4px 5px 0 rgba(34,34,34,.1);
    	box-shadow: 0 1px 10px 0 rgba(34,34,34,.08), 0 4px 5px 0 rgba(34,34,34,.1);
    	border-radius: 5px;
- 	 display: none;
-  	padding: 6px 12px;
+   	padding: 6px 12px;
   	border: 1px solid #ccc;
   	border-top: none;
-  	.tabcontent {
-	  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-	}
-
-
 	img{
 		width: 100%;	
 	}
@@ -58,8 +52,36 @@
 		}
 	}
 }
-	/* Go from zero to full opacity */
-	@keyframes fadeEffect {
-	  from {opacity: 0;}
-	  to {opacity: 1;}
+#Talasarili{
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 100px;
+	.input-group{
+		background-color: #EEEEEE;
+		border-radius: 5px;
+		padding: 10px;
+		.input-group-prepend{
+			height: 50px;
+			width: 60px;
+		}
+		.input-group-append{
+			button{
+				background-color: white;
+				border: 1px solid seagreen;
+			}
+		}
+		.input-group-img{
+			img{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+		}
+		.form-control{
+			height: 50px;
+			padding-top: 13px;
+			border: 1px solid seagreen;
+		}
 	}
+}
