@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tula</title>
-
+  <title>Sufokante</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../assets/img/icon/logoicon.png">
   <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/custom/css/main.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,8 +45,10 @@
 		          	<a class="dropdown-item" href="kimmycabs.html">KimmyCabs</a>
 		          	<a class="dropdown-item" href="Zaiden.html">Zaiden</a>
 		          	<a class="dropdown-item" href="Fairyqueen.html">Fairyqueen</a>
-		          	<a class="dropdown-item" href="Fairyqueen.html">Catchareal</a>
-		          	<a class="dropdown-item" href="Fairyqueen.html">Kurinto</a>
+		          	<a class="dropdown-item" href="Catchareal.html">Catchareal</a>
+		          	<a class="dropdown-item" href="Kurinto.html">Kurinto</a>
+		          	<a class="dropdown-item" href="Staz.html">Staz</a>
+		          	<a class="dropdown-item" href="WexX.html">WexX</a>
 		        </div>
 		    </li>
 	    </ul>
@@ -64,7 +66,7 @@
 		</div>
 	</div>
 </nav>
-<div class="container-fluid m-0 p-0 bg-white">
+<div class="container-fluid p-0 bg-white">
 	<div class="coverphoto" style="background-image: url(../assets/img/jpeg/coverphoto.jpg);">
 		<div class="black">
 			<div class="container">
@@ -72,16 +74,15 @@
 					<div class="col-sm-3 m-5">
 						<img src="../assets/img/jpeg/sufo.jpg" class="profilepic m-2">
 					</div>
-					<div class="col-sm-7 text-white mt-2">
+				<div class="col-sm-7 text-white mt-2">
 						<div class="mt-5 pl-5">
-							<h1 class="font-weight-bold">Sufokante</h1>
+								<h1 class="font-weight-bold">Sufokante</h1>
 							<p class="text-light">
 								<span class="font-weight-bold">10</span> Napangilakan 
 								<span class="font-weight-bold pl-3">1</span> Talasarili 
 								<span class="font-weight-bold pl-3"> 1</span> Tagahanga
 							</p>
-							<h6 class="font-weight-bold">
-								"Kasiyahan at kalungkutan ay isa lamang pangkaisipan at hindi nararapat na bigyan ng kahulugan" -Sufokante</h6>
+							<h6 class="font-weight-bold">"Kasiyahan at kalungkutan ay isa lamang pangkaisipan at hindi nararapat na bigyan ng kahulugan" -Sufokante</h6>
 						</div>
 					</div>
 				</div>
@@ -94,24 +95,23 @@
 				<div class="col-md-4">
 					<a href="#">Settings</a> 
 				</div>
-				<div class="col-md-1"></div>
 				<div class="col-md-1">
 					<button class="tablinks border-0 bg-light" id="defaultOpen" onclick="openTab(event, 'Sining')">Sining</button>
 				</div>
 				<div class="col-md-1">
 					<button class="tablinks border-0 bg-light" onclick="openTab(event, 'Talasarili')">Talasarili</button>
 				</div>
-				<div class="col-md-1">
+				<div class="col-md-2">
 					 <button class="tablinks border-0 bg-light" onclick="openTab(event, 'Napangilikan')">Napangilakan</button>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div id="Talasarili" class="tabcontent">
-			<div class="input-groups">
+			<div class="input-group">
 			  <div class="input-group-prepend">
 			    <span class="input-group-img"><img src="../assets/img/jpeg/sufo.jpg" width="50px"></span>
 			  </div>
@@ -122,69 +122,190 @@
 			</div>
 		</div>
 		<div id="Napangilikan" class="tabcontent mb-5">
-			  <div class="row mt-5 mb-5">
-			   	<img src="../assets/img/png/santinakpan.png" class="card-img-left col-lg-6" alt="responsive image" style="height: 650px; width: 100%;">
-			   	<div class="card-body col-lg-6">
-			        <h1 class="card-title font-awesome-weight-bold">Santinakpan</h1>		        
-			        <p class="card-text mb-4"><small class="text-muted">Isinulat ni sufokante<br><i class="fa fa-star mr-3"> 2</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 10</i> </small></p>
-				    <p class="card-text">Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho. Ngunit sa aking kaloob-looban, tila nagaalinlangan siyang sabihin ang katotohanan sa kadahilanang hindi pa siya handa. Hindi pa siya handa sa ano mang bagay na maaaring mangyari kapag sinabi na niya ang totoo. Kaya bilang pamamaalam sa kanya kasabay ng bawat letra ng tulang pinamagatan "Elastiko," nakaukit sa kauna-unahang titik sa taludtod nito ang kanyang apilyedo....</p>
-					<button type="button" class="btn w-100 bg-white"style="border: 2px solid darkgreen;"><a href="" style="color: darkgreen; text-decoration: none;">Buklatin</a></button> 
-					<div class="card-footer text-muted bg-white pl-0">Published Oct 25, 2019</div>
+			<div id="myBtnContainer" class="mt-5 mb-0">
+				<button class="btn cactive" onclick="filterSelection('all')"> Ipakita Lahat</button>
+				<button class="btn" onclick="filterSelection('kwento')"> kwento</button>
+				<button class="btn" onclick="filterSelection('tula')"> tula</button>
+				<button class="btn" onclick="filterSelection('guhit')"> guhit</button>
+				<button class="btn" onclick="filterSelection('talasarili')"> talasarili</button>
+				<button class="btn" onclick="filterSelection('larawan')"> larawan</button>
+			</div>
+			<div class="filterDiv kwento mt-5 mb-5">
+			  	<div class="row">
+				   	<img src="../assets/img/png/santinakpan.png" class="card-img-left col-lg-6" alt="responsive image" style="height: 650px; width: 100%;">
+				   	<div class="card-body col-lg-6">
+				        <h1 class="card-title font-awesome-weight-bold">Santinakpan</h1>		        
+				        <p class="card-text mb-4"><small class="text-muted">Isinulat ni sufokante<br><i class="fa fa-star mr-3"> 2</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 10</i> </small></p>
+					    <p class="card-text">Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho. Ngunit sa aking kaloob-looban, tila nagaalinlangan siyang sabihin ang katotohanan sa kadahilanang hindi pa siya handa. Hindi pa siya handa sa ano mang bagay na maaaring mangyari kapag sinabi na niya ang totoo. Kaya bilang pamamaalam sa kanya kasabay ng bawat letra ng tulang pinamagatan "Elastiko," nakaukit sa kauna-unahang titik sa taludtod nito ang kanyang apilyedo....</p>
+						<button type="button" class="btn w-100 bg-white"style="border: 2px solid darkgreen;"><a href="" style="color: darkgreen; text-decoration: none;">Buklatin</a></button> 
+						<div class="card-footer text-muted bg-white pl-0">Published Oct 25, 2019</div>
+					</div>
 				</div>
+			</div>
+			<div class="filterDiv tula mt-5 mb-5">
+				<h1>Walang maipapakita na tula</h1>
+			</div>
+			<div class="filterDiv guhit mt-5 mb-5">
+				<h1>Walang maipapakita na guhit</h1>
+			</div>
+			<div class="filterDiv talasarili mt-5 mb-5">
+				<h1>Walang maipapakita na talasarili</h1>
+			</div>
+			<div class="filterDiv larawan mt-5 mb-5">
+				<h1>Walang maipapakita na larawan</h1>
 			</div>
 		</div>
 		<div class="tabcontent mt-5" id="Sining"> 
-			<div class="row ">
-				<div class="aboutme col-lg-4 pt-2 border mb-5">
-					Ako yung tipong tao na madalas mong nakikitang nakapolo t-shirt  at palaging may baon na panyo. Yung tipong tao na walang pake sa buhok kung ito'y magulo. Yung tipong tao na kapag tinanong, palaging tugon ay iling at tango. At yung tipong tao na palaging nakaupo sa harapan dahil ang paningin ay malabo.<br><br>
-
-					Ngunit hindi ako yung tipong tao na naka eyeglass at antisosyal ang pagkatao. Hindi ako yung tipong nagaaral nang mabuti at palaging nakikilahok sa klase.<br><br>
-
-					Ako ay isa lamang pangkaraniwang estudyante na mahilig magbasa ng libro, mapag-isa, makinig ng kanta, matuto ng iba't ibang wika at minsan sinusubokang gumawa ng tula.<br><br>
-
-					Marami akong gustong masubukan sa buhay ngunit pera ang pangunahing hadlang. Alam kong malabong masubukan at makamtan, lalong-lalo na sa estado ng aking kasalukuyan.<br><br>
-
-					Kaya ako napadpad dito dahil kahit papaano natatamasa ko ang kaluguran at pagkasabik na dito ko lang nararanasan.<hr>
-					<i class="fa fa-facebook"></i> Facebook account
-					<hr>
+			<div class="row">
+				<div class="pr-2 pl-2 col-lg-4">
+					<div class="aboutme pt-2 pl-3 pr-3 border mb-4 bg-light">
+						<h6 class="font-weight-bold">Tungkol ni Sufokante</h6>
+						<hr class="mt-2 mb-2">
+						Ako yung tipong tao na madalas mong nakikitang nakapolo t-shirt  at palaging may baon na panyo. Yung tipong tao na walang pake sa buhok kung ito'y magulo. Yung tipong tao na kapag tinanong, palaging tugon ay iling at tango. At yung tipong tao na palaging nakaupo sa harapan dahil ang paningin ay malabo.<br><br> Ngunit hindi ako yung tipong tao na naka eyeglass at antisosyal ang pagkatao. Hindi ako yung tipong nagaaral nang mabuti at palaging nakikilahok sa klase.<br><br>Ako ay isa lamang pangkaraniwang estudyante na mahilig magbasa ng libro, mapag-isa, makinig ng kanta, matuto ng iba't ibang wika at minsan sinusubokang gumawa ng tula.<br><br>Marami akong gustong masubukan sa buhay ngunit pera ang pangunahing hadlang. Alam kong malabong masubukan at makamtan, lalong-lalo na sa estado ng aking kasalukuyan.<br><br>Kaya ako napadpad dito dahil kahit papaano natatamasa ko ang kaluguran at pagkasabik na dito ko lang nararanasan.<hr>
+						<i class="fa fa-facebook mr-3"></i> Facebook account
+						<hr>
+					</div>
+					<div class="personalinfo pr-3 pl-3 pt-2 bg-light mb-5 pb-2">
+						<h6 class="font-weight-bold">Iba pang impormasyon</h6>
+						<hr class="mt-2 mb-2">
+						<div class="kaarawan row">
+							<div class="col-lg-4">
+								<h6 class="font-weight-bold">Kaarawan</h6>
+								<p>06/02/2002</p>
+							</div>
+							<div class="col-lg-8">
+								<h6 class="font-weight-bold">Horoscope</h6>
+								<p>Gemini</p>
+							</div>
+						</div>
+						<div class="kasarian row">
+							<div class="col-lg-4">
+								<h6 class="font-weight-bold">Kasarian</h6>
+								<p>Lalaki</p>
+							</div>
+							<div class="col-lg-8">
+								<h6 class="font-weight-bold">Interesado sa</h6>
+								<p>Babae</p>
+							</div>
+						</div>
+						<div class="Istado row">
+							<div class="col-lg-4">
+								<h6 class="font-weight-bold">Istado</h6>
+								<p>Single</p>
+							</div>
+							<div class="col-lg-8">
+								<h6 class="font-weight-bold">Relihiyon</h6>
+								<p>Roman Catholic</p>
+							</div>
+						</div>
+						<div class="hilig">
+							<h6 class="font-weight-bold">Hilig / Hobbies</h6>
+							<p>Dancing, writing, reading, coding, learning languages, board games and playing mmorpg games.</p>
+						</div>
+						<div class="sports">
+							<h6 class="font-weight-bold">Sports and E-games</h6>
+							<p>Soccer, volleyball, tabletennis, badmenton, dota 2 and dragon nest</p>
+						</div>
+						<div class="pananaw">
+							<h6 class="font-weight-bold">Philosophy in life</h6>
+							<p>"Kasiyahan at kalungkutan ay isa lamang pangkaisipan at hindi nararapat na bigyan ng kahulugan." -Sufokante</p>
+						</div>
+						<div class="row">
+							<div class="col-lg-5">
+								<h6 class="font-weight-bold">Kahinaan</h6>
+								<p>Contentment</p>
+							</div>
+							<div class="col-sm-7">
+								<h6 class="font-weight-bold">Kalakasan</h6>
+								<p>Love</p>
+							</div>
+						</div>
+						<div class="ambition">
+							<h6 class="font-weight-bold">Ambisyon sa buhay</h6>
+							<p>Maging isang ganap na front-end developer</p>
+						</div>
+					</div>
 				</div>
-				<div class="gawa col-lg-7 ml-5 pt-2 border mb-5">
-					<h5 class="font-weight-bold">Napangilakan ni Sufokante</h5>
-					<p class="text-muted"><span class="font-weight-bold">1</span> Kwento  
-						<span class="font-weight-bold pl-3">15</span> Tula 
-						<span class="font-weight-bold pl-3">3</span> Larawan</p>
-					<div class="row mb-3">
-						<div class="col-sm-4">
-							<a href="pages/tula/santinakpan.html"><img src="../assets/img/png/santinakpan.png"></a>
+				<div class="col-lg-8">
+					<div class="row pr-2 pl-2">
+						<div class="gawa col-lg-12 pt-2 border mb-3 bg-light">
+							<h6 class="font-weight-bold">Tula ni Sufokante</h6>
+							<hr class="mt-2 mb-2">
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="tula/tula.html"><img src="../assets/img/png/santinakpan.png"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="tula/tula.html" class="text-dark">Santinakpan</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho....</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong Oct 25, 2019</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="col-lg-12 p-0 mb-3">
+								<button class="btn w-100" onclick="openTab(event, 'Napangilikan')">Iba pa...</button>
+							</div>
 						</div>
-						<div class="card-body col-sm-8 p-0">
-					        <h5 class="card-title font-weight-bold m-0"><a href="pages/tula/santinakpan.html" class="text-dark">Santinakpan</a></h5>
-					        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
-					        <p class="card-text mr-3">
-							Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho....
-							</p>
-					         <div class="card-footer text-muted bg-white pl-0 mr-3">
-							   <p><small>Inilathala noong Oct 25, 2019</small></p>
-							  </div>
-				      	</div>
-					</div>
-					<div class="row mb-3">
-						<div class="col-sm-4">
-							<a href="pages/kwento/astraltravel.html"><img src="../assets/img/jpeg/astraltravel.jpg"></a>
+						<div class="gawa col-lg-12 pt-2 border mb-3 bg-light">
+							<h6 class="font-weight-bold">Kwento ni Sufokante</h6>
+							<hr class="mt-2 mb-2">
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="pages/kwento/astraltravel.html"><img src="../assets/img/jpeg/astraltravel.jpg"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="pages/kwento/astraltravel.html" class="text-dark">Astral Travel</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">
+									Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral...
+									</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong Oct 25, 2019</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="col-lg-12 p-0 mb-3">
+								<button class="btn w-100" onclick="openTab(event, 'Napangilikan')">Iba pa...</button>
+							</div>
 						</div>
-						<div class="card-body col-sm-8 p-0">
-					        <h5 class="card-title font-weight-bold m-0"><a href="pages/kwento/astraltravel.html" class="text-dark">Astral Travel</a></h5>
-					        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
-					        <p class="card-text mr-3">
-							Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral...
-							</p>
-					         <div class="card-footer text-muted bg-white pl-0 mr-3">
-							   <p><small>Inilathala noong Oct 25, 2019</small></p>
-							  </div>
-				      	</div>
+						<div class="gawa col-lg-12 pt-2 border mb-5 bg-light">
+							<h6 class="font-weight-bold">Sining ni Sufokante</h6>
+							<hr class="mt-2 mb-2">
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="tula/tula.html"><img src="../assets/img/png/santinakpan.png"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="tula/tula.html" class="text-dark">Santinakpan</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho....</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong Oct 25, 2019</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="pages/kwento/astraltravel.html"><img src="../assets/img/jpeg/astraltravel.jpg"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="pages/kwento/astraltravel.html" class="text-dark">Astral Travel</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">
+									Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral...
+									</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong Oct 25, 2019</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="col-lg-12 p-0 mb-3">
+								<button class="btn w-100" onclick="openTab(event, 'Napangilikan')">Iba pa...</button>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-12 p-0 mb-3">
-						<button class="btn w-100">Iba pa...</button>
 					</div>
 				</div>
 			</div>
@@ -200,6 +321,7 @@
 </div>
 <script type="text/javascript">
 	document.getElementById("defaultOpen").click();
+	filterSelection("all");
 	function openTab(evt, tabName) {
 
   // Declare all variables
@@ -220,6 +342,52 @@
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("cactive");
+    current[0].className = current[0].className.replace(" cactive", "");
+    this.className += " cactive";
+  });
 }
 </script>
 <script src="../jquery/jquery.min.js"></script>

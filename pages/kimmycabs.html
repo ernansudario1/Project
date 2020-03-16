@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tula</title>
-
+  <title>KimmyCabs</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../assets/img/icon/logoicon.png">	
   <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/custom/css/main.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,8 +45,10 @@
 		          	<a class="dropdown-item" href="kimmycabs.html">KimmyCabs</a>
 		          	<a class="dropdown-item" href="Zaiden.html">Zaiden</a>
 		          	<a class="dropdown-item" href="Fairyqueen.html">Fairyqueen</a>
-		          	<a class="dropdown-item" href="Fairyqueen.html">Catchareal</a>
-		          	<a class="dropdown-item" href="Fairyqueen.html">Kurinto</a>
+		          	<a class="dropdown-item" href="Catchareal.html">Catchareal</a>
+		          	<a class="dropdown-item" href="Kurinto.html">Kurinto</a>
+		          	<a class="dropdown-item" href="Staz.html">Staz</a>
+		          	<a class="dropdown-item" href="WexX.html">WexX</a>
 		        </div>
 		    </li>
 	    </ul>
@@ -94,26 +96,25 @@
 				<div class="col-md-4">
 					<a href="#">Settings</a> 
 				</div>
-				<div class="col-md-1"></div>
 				<div class="col-md-1">
 					<button class="tablinks border-0 bg-light" id="defaultOpen" onclick="openTab(event, 'Sining')">Sining</button>
 				</div>
 				<div class="col-md-1">
 					<button class="tablinks border-0 bg-light" onclick="openTab(event, 'Talasarili')">Talasarili</button>
 				</div>
-				<div class="col-md-1">
+				<div class="col-md-2">
 					 <button class="tablinks border-0 bg-light" onclick="openTab(event, 'Napangilikan')">Napangilakan</button>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div id="Talasarili" class="tabcontent">
-			<div class="input-groups">
+			<div class="input-group">
 			  <div class="input-group-prepend">
-			    <span class="input-group-img"><img src="../assets/img/jpeg/sufo.jpg" ></span>
+			    <span class="input-group-img"><img src="../assets/img/jpeg/kimmycabs.jpg" width="50px"></span>
 			  </div>
 			  <textarea class="form-control" aria-label="With textarea" placeholder="Sumulat..."></textarea>
 				<div class="input-group-append">
@@ -122,77 +123,178 @@
 			</div>
 		</div>
 		<div id="Napangilikan" class="tabcontent mb-5">
-			  <div class="row mt-5 mb-5">
-			   	<img src="../assets/img/png/santinakpan.png" class="card-img-left col-lg-6" alt="responsive image" style="height: 650px; width: 100%;">
-			   	<div class="card-body col-lg-6">
-			        <h1 class="card-title font-awesome-weight-bold">Santinakpan</h1>		        
-			        <p class="card-text mb-4"><small class="text-muted">Isinulat ni sufokante<br><i class="fa fa-star mr-3"> 2</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 10</i> </small></p>
-				    <p class="card-text">Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho. Ngunit sa aking kaloob-looban, tila nagaalinlangan siyang sabihin ang katotohanan sa kadahilanang hindi pa siya handa. Hindi pa siya handa sa ano mang bagay na maaaring mangyari kapag sinabi na niya ang totoo. Kaya bilang pamamaalam sa kanya kasabay ng bawat letra ng tulang pinamagatan "Elastiko," nakaukit sa kauna-unahang titik sa taludtod nito ang kanyang apilyedo....</p>
-					<button type="button" class="btn w-100 bg-white"style="border: 2px solid darkgreen;"><a href="" style="color: darkgreen; text-decoration: none;">Buklatin</a></button> 
-					<div class="card-footer text-muted bg-white pl-0">Published Oct 25, 2019</div>
+			<div id="myBtnContainer" class="mt-5 mb-0">
+				<button class="btn cactive" onclick="filterSelection('all')"> Ipakita Lahat</button>
+				<button class="btn" onclick="filterSelection('kwento')"> kwento</button>
+				<button class="btn" onclick="filterSelection('tula')"> tula</button>
+				<button class="btn" onclick="filterSelection('guhit')"> guhit</button>
+				<button class="btn" onclick="filterSelection('talasarili')"> talasarili</button>
+				<button class="btn" onclick="filterSelection('larawan')"> larawan</button>
+			</div>
+			<div class="filterDiv kwento mt-5 mb-5">
+			  	<div class="row">
+				   	<img src="../assets/img/png/santinakpan.png" class="card-img-left col-lg-6" alt="responsive image" style="height: 650px; width: 100%;">
+				   	<div class="card-body col-lg-6">
+				        <h1 class="card-title font-awesome-weight-bold">Santinakpan</h1>		        
+				        <p class="card-text mb-4"><small class="text-muted">Isinulat ni sufokante<br><i class="fa fa-star mr-3"> 2</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 10</i> </small></p>
+					    <p class="card-text">Ginawa ko ang maikling tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan. Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho. Ngunit sa aking kaloob-looban, tila nagaalinlangan siyang sabihin ang katotohanan sa kadahilanang hindi pa siya handa. Hindi pa siya handa sa ano mang bagay na maaaring mangyari kapag sinabi na niya ang totoo. Kaya bilang pamamaalam sa kanya kasabay ng bawat letra ng tulang pinamagatan "Elastiko," nakaukit sa kauna-unahang titik sa taludtod nito ang kanyang apilyedo....</p>
+						<button type="button" class="btn w-100 bg-white"style="border: 2px solid darkgreen;"><a href="" style="color: darkgreen; text-decoration: none;">Buklatin</a></button> 
+						<div class="card-footer text-muted bg-white pl-0">Published Oct 25, 2019</div>
+					</div>
 				</div>
+			</div>
+			<div class="filterDiv tula mt-5 mb-5">
+				<h1>Walang maipapakita na tula</h1>
+			</div>
+			<div class="filterDiv guhit mt-5 mb-5">
+				<h1>Walang maipapakita na guhit</h1>
+			</div>
+			<div class="filterDiv talasarili mt-5 mb-5">
+				<h1>Walang maipapakita na talasarili</h1>
+			</div>
+			<div class="filterDiv larawan mt-5 mb-5">
+				<h1>Walang maipapakita na larawan</h1>
 			</div>
 		</div>
 		<div class="tabcontent mt-5" id="Sining"> 
-			<div class="row ">
-				<div class="aboutme col-lg-4 pt-2 border mb-5">
-					I am the kind of girl who likes making jokes. I Love read  wattpad and always  make something unique on herself. I am the kind of girl who always smile infront of other people. And if you good to me then I will be good to you. And if you don't like me. I don't like you too. I am the kind of girl who is not plastic when it comes to a frienship. I love playing volleyball that is my passion. I like to travel and adventure. My favorite color is black. I am boyish. But I can also dress like a girl when it depends on my mood. <br><br>
-
-					I am just a simple with a kind heart. I am only a student who's having a big dream. My ambition in life is study hard and you will be a successful someday<br><br>
-					<i class="fa fa-facebook"></i> Facebook account
-					<hr>
+			<div class="row">
+				<div class="pr-2 pl-2 col-lg-4">
+					<div class="aboutme pt-2 pl-3 pr-3 border mb-4 bg-light">
+						<h6 class="font-weight-bold">Tungkol ni KimmyCabs</h6>
+						<hr class="mt-2 mb-2">
+						Ako yung tipong tao na madalas mong nakikitang nakapolo t-shirt  at palaging may baon na panyo. Yung tipong tao na walang pake sa buhok kung ito'y magulo. Yung tipong tao na kapag tinanong, palaging tugon ay iling at tango. At yung tipong tao na palaging nakaupo sa harapan dahil ang paningin ay malabo.<br><br> Ngunit hindi ako yung tipong tao na naka eyeglass at antisosyal ang pagkatao. Hindi ako yung tipong nagaaral nang mabuti at palaging nakikilahok sa klase.<br><br>Ako ay isa lamang pangkaraniwang estudyante na mahilig magbasa ng libro, mapag-isa, makinig ng kanta, matuto ng iba't ibang wika at minsan sinusubokang gumawa ng tula.<br><br>Marami akong gustong masubukan sa buhay ngunit pera ang pangunahing hadlang. Alam kong malabong masubukan at makamtan, lalong-lalo na sa estado ng aking kasalukuyan.<br><br>Kaya ako napadpad dito dahil kahit papaano natatamasa ko ang kaluguran at pagkasabik na dito ko lang nararanasan.<hr>
+						<i class="fa fa-facebook mr-3"></i> Facebook account
+						<hr>
+					</div>
+					<div class="personalinfo pr-3 pl-3 pt-2 bg-light mb-5 pb-2">
+						<h6 class="font-weight-bold">Iba pang impormasyon</h6>
+						<hr class="mt-2 mb-2">
+						<div class="kaarawan row">
+							<div class="col-lg-4">
+								<h6 class="font-weight-bold">Kaarawan</h6>
+								<p>11/25/2001</p>
+							</div>
+							<div class="col-lg-8">
+								<h6 class="font-weight-bold">Horoscope</h6>
+								<p>Sagittarius</p>
+							</div>
+						</div>
+						<div class="kasarian row">
+							<div class="col-lg-4">
+								<h6 class="font-weight-bold">Kasarian</h6>
+								<p>Babae</p>
+							</div>
+							<div class="col-lg-8">
+								<h6 class="font-weight-bold">Interesado sa</h6>
+								<p>Lalaki</p>
+							</div>
+						</div>
+						<div class="Istado row">
+							<div class="col-lg-4">
+								<h6 class="font-weight-bold">Istado</h6>
+								<p>Taken</p>
+							</div>
+							<div class="col-lg-8">
+								<h6 class="font-weight-bold">Relihiyon</h6>
+								<p>Roman Catholic</p>
+							</div>
+						</div>
+						<div class="hilig">
+							<h6 class="font-weight-bold">Hilig / Hobbies</h6>
+							<p>Dancing, singing, reading, and learning korean language.</p>
+						</div>
+						<div class="sports">
+							<h6 class="font-weight-bold">Sports and E-games</h6>
+							<p>Volleyball and Mobile Legends</p>
+						</div>
+						<div class="pananaw">
+							<h6 class="font-weight-bold">Philosophy in life</h6>
+							<p>"EDUCATION IS A GIFT THAT NO ONE CAN TAKE AWAY"</p>
+						</div>
+						<div class="row">
+							<div class="col-lg-5">
+								<h6 class="font-weight-bold">Kahinaan</h6>
+								<p>Wild Animals</p>
+							</div>
+							<div class="col-sm-7">
+								<h6 class="font-weight-bold">Kalakasan</h6>
+								<p>Love</p>
+							</div>
+						</div>
+						<div class="ambition">
+							<h6 class="font-weight-bold">Ambisyon sa buhay</h6>
+							<p>Maging IT</p>
+						</div>
+					</div>
 				</div>
-				<div class="gawa col-lg-7 ml-5 pt-2 border mb-5">
-					<h5 class="font-weight-bold">Napangilakan ni KimmyCabs</h5>
-					<p class="text-muted">
-						<span class="font-weight-bold">10</span> Larawan</p>
-					<div class="row mb-3">
-						<div class="col-sm-4">
-							<a href="pages/larawan/clouds.html"><img src="../assets/img/jpeg/clouds.jpg"></a>
+				<div class="col-lg-8">
+					<div class="row pr-2 pl-2">
+						<div class="gawa col-lg-12 pt-2 border mb-3 bg-light">
+							<h6 class="font-weight-bold">Larawan ni KimmyCabs</h6>
+							<hr class="mt-2 mb-2">
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="tula/tula.html"><img src="../assets/img/jpeg/clouds.jpg"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="tula/tula.html" class="text-dark">Clouds</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni KimmyCabs<br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 1</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">Clouds. That photo was taken in isla de fuego, which is known as siquijor. Siquijor is only a province and a small island. We went there on our vacation. I didn't expect the clouds  has a nice and unique formation....</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong March 18, 2020</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="tula/tula.html"><img src="../assets/img/jpeg/Adventure.jpg"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3 pt-0">
+							        <h6 class="card-title font-weight-bold m-0"><a href="tula/tula.html" class="text-dark">Adventure</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni KimmyCabs<br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 1</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">Adventure also my stress reliever. I am the one who's on top of the rock. It was taken is osmeña peak in badian. The view their are relaxing and fresh. When you are on top. You can see the ocean sorrounded by the small island of badian....</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong March 18, 2020</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="tula/tula.html"><img src="../assets/img/jpeg/Christmaslight.jpg"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="tula/tula.html" class="text-dark">Christmass Lights</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni KimmyCabs<br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 1</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">It was taken on January. When we're celebrated a sinulog festival. They are having a fireworks display in ayala. Cebuanos celebrated sinulog festival. On the 3rd sunday of january. Fireworks are awesome and beautiful....</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong March 18, 2020</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="col-lg-12 p-0 mb-3">
+								<button class="btn w-100" onclick="openTab(event, 'Napangilikan')">Iba pa...</button>
+							</div>
 						</div>
-						<div class="card-body col-sm-8 p-0">
-					        <h5 class="card-title font-weight-bold m-0"><a href="pages/larawan/clouds.html" class="text-dark">Clouds</a></h5>
-					        <p class="card-text m-0"><small class="text-muted">Isinulat ni Sufokante <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
-					        <p class="card-text mr-3">
-							Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky. Rest is not idleness, and to lie sometimes on the grass under trees on a summer's day, listening to the murmur of the water, or watching the clouds float across the sky....
-							</p>
-					         <div class="card-footer text-muted bg-white pl-0 mr-3">
-							   <p><small>Inilathala noong Oct 25, 2019</small></p>
-							  </div>
-				      	</div>
-					</div>
-					<div class="row mb-3">
-						<div class="col-sm-4">
-							<a href="pages/larawan/friendship.html"><img src="../assets/img/jpeg/friendship.jpg" height="200px;"></a>
+						<div class="gawa col-lg-12 pt-2 border mb-5 bg-light">
+							<h6 class="font-weight-bold">Guhit ni KimmyCabs</h6>
+							<hr class="mt-2 mb-2">
+							<div class="row mb-3">
+								<div class="col-sm-4">
+									<a href="tula/tula.html"><img src="../assets/img/jpeg/simplegirl.jpg"></a>
+								</div>
+								<div class="card-body col-sm-8 pr-3 pl-3">
+							        <h6 class="card-title font-weight-bold m-0"><a href="tula/tula.html" class="text-dark">Simple Girl</a></h6>
+							        <p class="card-text m-0"><small class="text-muted">Isinulat ni KimmyCabs<br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 10</i><i class="fa fa-comment"> 0</i> </small></p>
+							        <p class="card-text mr-3">I drew this on our last semester and this was our project. The materials I used are colored pencils and colored pen. Although my drawing is not totally perfect but I made this with all my heart....</p>
+							        <div class="card-footer text-muted bg-light pl-0 mr-3 pt-2 pb-0">
+									   <p><small>Inilathala noong Oct 25, 2019</small></p>
+									</div>
+						      	</div>
+							</div>
+							<div class="col-lg-12 p-0 mb-3">
+								<button class="btn w-100" onclick="openTab(event, 'Napangilikan')">Iba pa...</button>
+							</div>
 						</div>
-						<div class="card-body col-sm-8 p-0">
-					        <a href="pages/larawan/friendship.html"><h5 class="card-title font-weight-bold m-0 text-dark">Friendship</h5></a>
-					        <p class="card-text m-0"><small class="text-muted">Isinulat ni KimmyCabs<br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
-					        <p class="card-text mr-3">
-							A real friend is one who walks in when the rest of the world walks out. Few things have such a huge impact on happiness and the enjoyment, depth and plain fun of life as the friendships we have....
-							</p>
-					         <div class="card-footer text-muted bg-white pl-0 mr-3">
-							    <p><small>Inilathala noong Oct 25, 2019</small></p>
-							  </div>
-				      	</div>
-					</div>
-					<div class="row mb-3">
-						<div class="col-sm-4">
-							<a href="pages/larawan/adventure.html"><img src="../assets/img/jpeg/adventure.jpg"></a>
-						</div>
-						<div class="card-body col-sm-8 p-0">
-					        <h5 class="card-title font-weight-bold m-0"><a href="pages/larawan/adventure.html" class="text-dark">Adventure</a></h5>
-					        <p class="card-text m-0"><small class="text-muted">Isinulat ni KimmyCabs <br><i class="fa fa-star mr-3"> 0</i> <i class="fa fa-list mr-3"> 15</i><i class="fa fa-comment"> 0</i> </small></p>
-					        <p class="card-text mr-3">
-							If we wait until we are ready, we will be waiting for the rest of our life. Life is an adventure and that is best lived boldly. Start where you are. When in doubts, travel. If you still have doubts and need an extra push. There is a lot of adventures out there, waiting for us to live them There is no need to be bored in a world as beautiful as this....
-							</p>
-					         <div class="card-footer text-muted bg-white pl-0 mr-3">
-							   <p><small>Inilathala noong Oct 25, 2019</small></p>
-							  </div>
-				      	</div>
-					</div>
-					<div class="col-lg-12 p-0 mb-3">
-						<button class="btn w-100" onclick="openTab(event, 'Napangilikan')">Iba pa...</button>
 					</div>
 				</div>
 			</div>
@@ -208,27 +310,75 @@
 </div>
 <script type="text/javascript">
 	document.getElementById("defaultOpen").click();
+	filterSelection("all");
 	function openTab(evt, tabName) {
 
-  // Declare all variables
-  var i, tabcontent, tablinks;
+	  // Declare all variables
+	  var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+	  // Get all elements with class="tabcontent" and hide them
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+	  // Get all elements with class="tablinks" and remove the class "active"
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+	  // Show the current tab, and add an "active" class to the button that opened the tab
+	  document.getElementById(tabName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("filterDiv");
+	  if (c == "all") c = "";
+	  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+	  for (i = 0; i < x.length; i++) {
+	    w3RemoveClass(x[i], "show");
+	    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+
+	// Show filtered elements
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    if (arr1.indexOf(arr2[i]) == -1) {
+	      element.className += " " + arr2[i];
+	    }
+	  }
+	}
+
+	// Hide elements that are not selected
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    while (arr1.indexOf(arr2[i]) > -1) {
+	      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+	    }
+	  }
+	  element.className = arr1.join(" ");
+	}
+
+	// Add active class to the current control button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	    var current = document.getElementsByClassName("cactive");
+	    current[0].className = current[0].className.replace(" cactive", "");
+	    this.className += " cactive";
+	  });
+	}
+
 </script>
 <script src="../jquery/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>

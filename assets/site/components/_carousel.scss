@@ -1,9 +1,21 @@
 .carousel{
-	 height: 110vh;
+	 height: 100vh;
+	 .carousel-indicators{
+	 	height: 10vh;
+	 }
+	 .carousel-inner{
+	 	height: 100vh;
+	 	.carousel-item{
+	 		height: 100vh;
+	 	}
+	 	.carousel-caption{
+	 		height: 40vh;
+	 	}
+	 }
 	 .carousel-item{
 	 	text-shadow: 2px 2px 4px #000000;
 	 	img{
-	 		height: 110vh;
+	 		height: auto;
 	 	}
 	 }
 }
