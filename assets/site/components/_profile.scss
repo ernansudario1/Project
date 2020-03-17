@@ -1,4 +1,37 @@
-
+@media only screen and (max-width: 600px) {
+	.coverphoto{
+		height: 75vh !important;
+		.profilepic{
+			margin-top: 10px !important;
+			margin-left: -20px !important;
+		}
+		.rightbio{
+			margin-top: 28vh !important;
+			position: absolute;
+			margin-left: -20px;
+		}
+	}
+	.profilenav{
+		position: relative;
+		.settings{
+			display: none;
+		}
+		.talasarili{
+			position: relative;
+			margin-left: 100px;
+			margin-top: -25px;
+		}
+		.napangilakan{
+			position: relative;
+			margin-top: -26px;
+			margin-left: 200px;
+		}
+	}
+	#Talasarili{
+		padding-left: 0px !important;
+		padding-right: 0	px !important;
+	}
+}
 .coverphoto{
 	height: 300px;
 	background-attachment: fixed;
@@ -101,9 +134,10 @@
 
 /* Style the buttons */
 .btn {
+  margin: 3px;
   border: none;
   outline: none;
-  padding: 12px 16px;
+  padding: 5px 20px;
   background-color: #f1f1f1;
   cursor: pointer;
   /* Add a light grey background on mouse-over */

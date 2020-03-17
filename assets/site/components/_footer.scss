@@ -1,3 +1,10 @@
+@media screen and (max-width: 990px){
+	.footer{
+		.right{
+			display: none;
+		}
+	}
+}
 .footer{
 	background-color: seagreen;
 	height: 350px;

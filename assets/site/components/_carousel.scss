@@ -1,4 +1,44 @@
+@media screen and (max-width: 576px){
+	.carousel{
+		height: 100vh !important;
+		.lan{
+			height: 100% !important;
+		}
+		.por{
+			display: block !important;
+			height: 100vh !important;
+		}
+		.carousel-caption{
+			height: 40vh !important;
+		}
+		h3{
+			font-size: 2.5em !important;
+		}
+		p{
+			font-size: 1.4em !important;
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.carousel{
+		.lan{
+			height: 100vh !important;
+			display: none !important;
+		}
+		.por{
+			display: block !important;
+			height: 100vh !important;
+		}
+		h3{
+			font-size: 4em;
+		}
+		p{
+			font-size: 2em;
+		}
+	}
+}
 .carousel{
+	 width: 100%;
 	 height: 100vh;
 	 .carousel-indicators{
 	 	height: 10vh;
