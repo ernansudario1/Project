@@ -27,3 +27,11 @@
 		}
 	}
 }
+	.hovercard:hover{
+		cursor: pointer;
+		.hoveroverlay{
+			display: block !important;
+			background-color: rgba(0,0,0, 0.5);
+			border-radius: 5px;
+		}
+	}
