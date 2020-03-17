@@ -66,9 +66,29 @@
 		</div>
 	</div>
 </nav>
+<div class="stickyprogress container-fluid p-0 sticky-top">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
 <div class="container">
 	<div class="row mb-5 mt-5">
-		<div class="col-lg-9">
+		<div class="leftlink col-lg-2 text-center">
+			<div class="sticky-top pt-5 mt-5">
+				<center>
+					<img src="../../assets/img/jpeg/sufo.jpg" class="leftimg rounded-circle mt-4">
+				</center>
+				<small class="text-muted">Isinulat ni <a href="../sufokante.html">sufokante</a></small>
+				<p class="mt-2">Aksyon</p>
+				<a href="#" class="fa fa-star mb-2 bg-light stp-seagreen p-3"></a><br>
+				<a href="#Talasarili" class="fa fa-comment mb-2 bg-light stp-seagreen p-3"></a><br>
+				<a href="#" class="fa fa-share mb-2 bg-light stp-seagreen p-3"></a><br>
+				<p class="mt-1">Balikan</p>
+				<a href="#" class="fa fa-arrow-up mb-2 bg-light stp-seagreen p-3"></a><br>
+				<a href="#bottom" class="fa fa-arrow-down mb-2 bg-light stp-seagreen p-3"></a>
+			</div>
+		</div>
+		<div class="content col-lg-7">
 			<img src="../../assets/img/png/kalikasan.png" width="100%" alt="responsive image">
 			<p class="text-muted text-center mt-3 mb-0">
 				<i class="fa fa-star mr-3"> 0</i> 
@@ -132,6 +152,8 @@
 	        <p class="mt-4">
 	        	Ito ang isa sa paburit kong tula na nagawa. Naalala ko pa yung gabi na ginawa ko ang tulang ito. Dugtungan ng makabuluhan na salita sa naunang talata. Puno ng pandama ang bawat salita na inihahambing sa kalikasan. Habang dinudugtungan ko ang bawat talata ay bukas lahat ng lima kong pandama; pangamoy, pandinig, panlasa, paningin at pandamdam. Dito ko napagtanto na ang malikhaing pagsulat ay likas na nanggagaling sa pandama at diwa.  
 	    	</p>
+			<a href="tadhanaoPaghanga.html"><button class="btn stp-seagreen" style="width: 25%;"><i class="fa fa-arrow-left float-left mt-1"></i>Balikan</button></a>
+	        <a href="Takbongpanahon.html"><button class="btn stp-seagreen" style="width: 70%;">Takbo ng Panahon<i class="fa fa-arrow-right float-right mt-1"></i></button></a>
 			<hr class="mb-4">
 
 			<div class="stp-actions text-center">
@@ -154,7 +176,7 @@
 				<p>Maging pinakaunang mag bigay ng saloobin</p>
 			</div>
 		</div>
-		<div class="col-lg-3">
+		<div class="rightad col-lg-3">
 			<h3 class="stp-seagreen">Iba pang sining</h3>
 			<hr class="mb-3 mt-2">
 			<a href="../larawan/clouds.html" class="text-white">
@@ -239,7 +261,7 @@
 					<p><i class="fa fa-phone"></i> 091234567890 </p>
 					<p><i class="fa fa-compass"></i> Informatics College Cebu</p>
 				</div>
-				<div class="col-lg-8">
+				<div class="right col-lg-8">
 					<div class="row">
 						<div class="col-lg-4">
 							<h6 class="font-weight-bold">Links</h6>
@@ -275,6 +297,17 @@
 		<a href="instagram.com/santinakpan"><i class="fa fa-instagram"></i></a>
 	</h6>
 </div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 <script src="../../jquery/jquery.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
