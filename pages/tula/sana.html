@@ -66,9 +66,29 @@
 		</div>
 	</div>
 </nav>
+<div class="stickyprogress container-fluid p-0 sticky-top">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
 <div class="container">
 	<div class="row mb-5 mt-5">
-		<div class="col-lg-9">
+		<div class="leftlink col-lg-2 text-center">
+			<div class="sticky-top pt-5 mt-5">
+				<center>
+					<img src="../../assets/img/jpeg/sufo.jpg" class="leftimg rounded-circle mt-4">
+				</center>
+				<small class="text-muted">Isinulat ni <a href="../sufokante.html">sufokante</a></small>
+				<p class="mt-2">Aksyon</p>
+				<a href="#" class="fa fa-star mb-2 bg-light stp-seagreen p-3"></a><br>
+				<a href="#Talasarili" class="fa fa-comment mb-2 bg-light stp-seagreen p-3"></a><br>
+				<a href="#" class="fa fa-share mb-2 bg-light stp-seagreen p-3"></a><br>
+				<p class="mt-1">Balikan</p>
+				<a href="#" class="fa fa-arrow-up mb-2 bg-light stp-seagreen p-3"></a><br>
+				<a href="#bottom" class="fa fa-arrow-down mb-2 bg-light stp-seagreen p-3"></a>
+			</div>
+		</div>
+		<div class="content col-lg-7">
 			<img src="../../assets/img/png/sana.png" width="100%" alt="responsive image">
 			<p class="text-muted text-center mt-3 mb-0">
 				<i class="fa fa-star mr-3"> 0</i> 
@@ -91,6 +111,8 @@
 	        Napakamisteryoso kasi ng katangian niya-- lahat naman siguro ng taong hindi natin kilala ay matatawag na <i>misteryoso</i>. Lalo na sa kagaya niya na hindi gaanong nakikipag halubilo sa iba. Kung mayroon sana akong lakas na lapitan siya at kakausapin, pero wala e, duwag yung lodi niyo. Hindi rin alam ang sasabihin.<br><br>
 	        Yayain, kikilalanin? ngunit napaka hirap naman yata itong gawin.<br><br>
 	    	</p>
+			  <a href="#"><button class="btn stp-seagreen" style="width: 25%;"><i class="fa fa-arrow-left float-left mt-1"></i>Balikan</button></a>
+	         <a href="elastiko.html"><button class="btn stp-seagreen" style="width: 70%;">Elastiko <i class="fa fa-arrow-right float-right mt-1"></i></button></a>
 			<hr class="mb-4">
 
 			<div class="stp-actions text-center">
@@ -113,7 +135,7 @@
 				<p>Maging pinakaunang mag bigay ng saloobin</p>
 			</div>
 		</div>
-		<div class="col-lg-3">
+		<div class="rightad col-lg-3">
 			<h3 class="stp-seagreen">Iba pang sining</h3>
 			<hr class="mb-3 mt-2">
 			<a href="../larawan/clouds.html" class="text-white">
@@ -234,6 +256,17 @@
 		<a href="instagram.com/santinakpan"><i class="fa fa-instagram"></i></a>
 	</h6>
 </div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 <script src="../../jquery/jquery.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
 </body>

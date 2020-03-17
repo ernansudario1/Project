@@ -66,6 +66,11 @@
 		</div>
 	</div>
 </nav>
+<div class="stickyprogress container-fluid p-0 sticky-top">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
 <div class="container">
 	<div class="row mb-5 mt-5">
 		<div class="col-lg-9">
@@ -257,6 +262,17 @@
 		<a href="instagram.com/santinakpan"><i class="fa fa-instagram"></i></a>
 	</h6>
 </div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 <script src="../../jquery/jquery.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
 </body>

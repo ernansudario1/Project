@@ -1,0 +1,49 @@
+@media screen and (max-width: 800px){
+	.rightad{
+		display: none;
+	}
+	.leftlink{
+		display: none;
+	}
+	.content{
+		h1{
+			font-size: 2em;
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	.content{
+		h1{
+			font-size: 1.5em;
+		}
+	}
+}
+.stickyprogress{
+	padding-top: 55px !important; 
+	margin-top: -55px;
+	z-index: 2;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+	.progress-bar {
+	  height: 8px;
+	  background: #4caf50;
+	  width: 0%;
+	}
+}
+.embed-responsive{
+	height: 50vh;
+}
+.leftlink{
+	z-index: 1;
+	margin-top: -100px;
+	a{
+		text-decoration: none;
+	}
+	.leftimg{
+		width: 80px; 
+		height: 80px;
+	}
+}
