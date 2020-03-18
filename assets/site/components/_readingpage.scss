@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px){
+@media screen and (max-width: 991px){
 	.rightad{
 		display: none;
 	}
@@ -16,6 +16,9 @@
 		h1{
 			font-size: 1.5em;
 		}
+	}
+	.input-group{
+		width: 140% !important;
 	}
 }
 .stickyprogress{
@@ -46,4 +49,16 @@
 		width: 80px; 
 		height: 80px;
 	}
+}
+.stp-actions{
+	.btn{ 
+		margin: 0 !important;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-right: 10px;
+		padding-left: 10px;
+	 }
+}
+.input-group{
+	width: 115%;
 }
